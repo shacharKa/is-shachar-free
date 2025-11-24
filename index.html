@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Helper</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="date"] {
+            width: 90%;
+            padding: 15px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #output {
+            margin-top: 25px;
+            padding: 15px;
+            font-size: 20px;
+            background: white;
+            border-radius: 6px;
+            min-height: 40px;
+        }
+        #disclamer {
+            margin-top: 25px;
+            padding: 15px;
+            font-size: 20px;
+            
+            border-radius: 6px;
+            min-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>is shachar free today</h2>
+
+    <input type="date" id="dateInput" onchange="checkSelectedDate()">
+
+    <button onclick="checkTomorrow()">Tomorrow</button>
+    <button onclick="checkDayAfter()">Day After Tomorrow</button>
+
+    <div id="output"></div>
+
+    <div id="disclamer">סים לב שגם ימים שאחרי משמרת 24 שעות מסומנים כפנויים למרות שאני כניראה פשוט אשן בהם</div>
+    <script src="main.js"></script>
+
+</body>
+</html>
